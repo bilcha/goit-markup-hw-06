@@ -123,6 +123,13 @@
   letter-spacing: 0.02em;
 }
 
+.mobile-mail-link:hover,
+.mobile-mail-link:focus,
+.mobile-phone-link:hover,
+.mobile-phone-link:focus {
+  color: var(--pressed-button-color);
+}
+
 .modal-social-links-wrapper {
   display: flex;
   gap: 56px;
