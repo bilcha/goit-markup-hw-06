@@ -21,7 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <header class="page-header">
@@ -41,7 +41,7 @@
           </ul>
         </nav>
         <address class="address-data">
-          <ul class="list header-flex-wrapper">
+          <ul class="list header-adress-wrapper">
             <li class="contact-data">
               <a class="link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -52,6 +52,16 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-open-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -146,13 +156,24 @@
           <h2 class="section-header">What are we doing</h2>
           <ul class="list list-wrapper">
             <li class="photo-list">
-              <img src="./images/desktop.jpg" alt="desktop" width="360" />
-            </li>
-            <li class="photo-list">
-              <img src="./images/phone.jpg" alt="mobile versions" width="360" />
+              <img
+                srcset="./images/desktop@2x.jpg 2x"
+                src="./images/desktop.jpg"
+                alt="desktop"
+                width="360"
+              />
             </li>
             <li class="photo-list">
               <img
+                srcset="./images/phone@2x.jpg 2x"
+                src="./images/phone.jpg"
+                alt="mobile versions"
+                width="360"
+              />
+            </li>
+            <li class="photo-list">
+              <img
+                srcset="./images/mobile@2x.jpg 2x"
                 src="./images/mobile.jpg"
                 alt="mobile application"
                 width="360"
@@ -165,16 +186,20 @@
       <section class="section-wrapper team-section">
         <div class="container">
           <h2 class="section-header">Our Team</h2>
-          <ul class="list list-wrapper">
+          <ul class="list list-wrapper team-cards-wrapper">
             <li class="team-card">
               <img
+                srcset="
+                  ./images/team/guerrero.jpg    1x,
+                  ./images/team/guerrero@2x.jpg 2x
+                "
                 src="./images/team/guerrero.jpg"
                 alt="Mark Guerrero product designer"
                 width="264"
               />
               <div class="card-text">
-                <h3 class="block-header">Mark Guerrero</h3>
-                <p class="block-descr">Product Designer</p>
+                <h3 class="team-card-header">Mark Guerrero</h3>
+                <p class="team-card-descr">Product Designer</p>
                 <ul class="list social-links-wrapper">
                   <li class="social-item">
                     <a class="social-link" href="">
@@ -229,13 +254,14 @@
             </li>
             <li class="team-card">
               <img
+                srcset="./images/team/ford@2x.jpg 2x"
                 src="./images/team/ford.jpg"
                 alt="Tom Ford frontend developer"
                 width="264"
               />
               <div class="card-text">
-                <h3 class="block-header">Tom Ford</h3>
-                <p class="block-descr">Frontend Developer</p>
+                <h3 class="team-card-header">Tom Ford</h3>
+                <p class="team-card-descr">Frontend Developer</p>
                 <ul class="list social-links-wrapper">
                   <li class="social-item">
                     <a class="social-link" href="">
@@ -290,13 +316,14 @@
             </li>
             <li class="team-card">
               <img
+                srcset="./images/team/garcia@2x.jpg 2x"
                 src="./images/team/garcia.jpg"
                 alt="Camila Garcia marketing"
                 width="264"
               />
               <div class="card-text">
-                <h3 class="block-header">Camila Garcia</h3>
-                <p class="block-descr">Marketing</p>
+                <h3 class="team-card-header">Camila Garcia</h3>
+                <p class="team-card-descr">Marketing</p>
                 <ul class="list social-links-wrapper">
                   <li class="social-item">
                     <a class="social-link" href="">
@@ -351,13 +378,14 @@
             </li>
             <li class="team-card">
               <img
+                srcset="./images/team/wilson@2x.jpg 2x"
                 src="./images/team/wilson.jpg"
                 alt="Daniel Wilson UI designer"
                 width="264"
               />
               <div class="card-text">
-                <h3 class="block-header">Daniel Wilson</h3>
-                <p class="block-descr">UI Designer</p>
+                <h3 class="team-card-header">Daniel Wilson</h3>
+                <p class="team-card-descr">UI Designer</p>
                 <ul class="list social-links-wrapper">
                   <li class="social-item">
                     <a class="social-link" href="">
@@ -421,7 +449,7 @@
               <a href="" class="customer-link-item">
                 <svg
                   class="customers-icon"
-                  width="104"
+                  width="110"
                   height="56"
                   aria-label="company logo"
                 >
@@ -433,7 +461,7 @@
               <a href="" class="customer-link-item">
                 <svg
                   class="customers-icon"
-                  width="104"
+                  width="110"
                   height="56"
                   aria-label="company logo"
                 >
@@ -445,7 +473,7 @@
               <a href="" class="customer-link-item"
                 ><svg
                   class="customers-icon"
-                  width="104"
+                  width="110"
                   height="56"
                   aria-label="company logo"
                 >
@@ -457,7 +485,7 @@
               <a href="" class="customer-link-item">
                 <svg
                   class="customers-icon"
-                  width="104"
+                  width="110"
                   height="56"
                   aria-label="company logo"
                 >
@@ -469,7 +497,7 @@
               <a href="" class="customer-link-item">
                 <svg
                   class="customers-icon"
-                  width="104"
+                  width="110"
                   height="56"
                   aria-label="company logo"
                 >
@@ -481,7 +509,7 @@
               <a href="" class="customer-link-item">
                 <svg
                   class="customers-icon"
-                  width="104"
+                  width="110"
                   height="56"
                   aria-label="company logo"
                 >
@@ -700,6 +728,109 @@
       </div>
     </div>
 
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="mobile-menu-container">
+        <button type="button" class="close-btn js-close-menu">
+          <svg
+            class="icon-close"
+            width="8"
+            height="8"
+            aria-label="Modal window close icon"
+          >
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="list mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a
+                class="link current-mobile mobile-menu-link"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="link mobile-menu-link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="link mobile-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-contact-wrapper">
+          <address class="mobile-address-data">
+            <ul class="list mobile-adress-wrapper">
+              <li class="mobile-contact-data">
+                <a class="link mobile-phone-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-contact-data">
+                <a
+                  class="link mobile-mail-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="list modal-social-links-wrapper">
+            <li class="social-item">
+              <a class="social-link" href="">
+                <svg
+                  class="social-icon"
+                  width="24"
+                  height="24"
+                  aria-label="Instagram icon"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="">
+                <svg
+                  class="social-icon"
+                  width="24"
+                  height="24"
+                  aria-label="Twitter icon"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="">
+                <svg
+                  class="social-icon"
+                  width="24"
+                  height="24"
+                  aria-label="Facebook icon"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="">
+                <svg
+                  class="social-icon"
+                  width="24"
+                  height="24"
+                  aria-label="Linkedin icon"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
