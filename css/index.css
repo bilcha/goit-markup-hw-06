@@ -755,6 +755,10 @@
     column-gap: 24px;
   }
 
+  .block-header {
+    text-align: start;
+  }
+
   .list-item,
   .team-card {
     width: calc((100% - 24px)/2);
