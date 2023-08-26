@@ -143,7 +143,7 @@
 
 .hero-screen {
   max-width: 1440px;
-  padding: 188px 0;
+  padding: 112px 0;
   margin: 0 auto;
   background-color: var(--primary-dark-color);
   color: var(--primary-background-color);
@@ -663,6 +663,18 @@
   color: #4d5ae5;
 }
 
+/* MEDIA FOR TABLET */
+
+
+@media screen and (max-width: 428px) {
+  .modal-social-links-wrapper {
+    gap: 28px;
+  }
+
+  .mobile-phone-link {
+    font-size: 24px;
+  }
+}
 
 /* MEDIA FOR TABLET */
 
@@ -792,9 +804,8 @@
   }
 
   .footer-container,
-  .customers-list-wrapper,
-  .team-cards-wrapper {
-    padding: 0 92px;
+  .skinny-desktop-container {
+    max-width: 584px;
   }
 
   .footer-text {
@@ -843,18 +854,23 @@
     letter-spacing: 0.02em;
   }
 
-  .footer-container,
   .customers-list-wrapper,
   .team-cards-wrapper {
     padding: 0;
   }
 
   .footer-container {
+    padding-left: 15px;
+    padding-right: 15px;
     gap: 0;
   }
 
   .section-wrapper {
     padding: 120px 0;
+  }
+
+  .hero-screen {
+    padding: 188px 0;
   }
 
   .hero-header {
